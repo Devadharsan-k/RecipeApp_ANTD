@@ -49,6 +49,7 @@ const Recipe = () => {
     };
 
     if (query.trim() !== "") {
+      setInitialLoading(true);
       fetchData();
     }
 
