@@ -89,7 +89,7 @@ const Recipe = () => {
       </div>
 
       {initialLoading ? (
-        <Row justify="space-evenly" align="middle">
+        <Row justify="space-evenly" align="middle" gutter={[16, 16]}>
           {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
             <Col
               key={index}
