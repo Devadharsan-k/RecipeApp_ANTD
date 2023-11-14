@@ -1,4 +1,4 @@
-import { Badge, Card, Image } from "antd";
+import { Badge, Card } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./RecipeCard.module.css";
@@ -16,7 +16,7 @@ const RecipeCard = ({ recipe }) => {
         <Card
           className={styles.card}
           hoverable
-          cover={<Image src={recipe.recipe.image} />}
+          cover={<img src={recipe.recipe.image} />}
         >
           <Meta title={recipe.recipe.label} />
           <div className={styles.types}>

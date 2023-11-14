@@ -1,4 +1,4 @@
-import { Divider, Spin } from "antd";
+import { Divider, Image, Spin } from "antd";
 import React, { useEffect, useState } from "react";
 import { AiFillFire } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
@@ -32,7 +32,7 @@ const RecipeDetails = () => {
         {recipe.label}
       </Link>
       <div className={styles.main}>
-        <img src={recipe.image} className={styles.img} />
+        <Image src={recipe.image} className={styles.img} />
         <div className={styles.content}>
           <p className={styles.mc}>{recipe.label}</p>
           <div className={styles.type}>
